@@ -1,0 +1,227 @@
+@charset "UTF-8";
+.matsuri-mainvisual {
+  position: relative;
+}
+.matsuri-mainvisual img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.matsuri-mainvisual .matsuri-logo {
+  z-index: 1000;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  color: white;
+}
+
+.matsuri-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  font-size: 150px;
+  color: white;
+}
+
+.monthly-promo {
+  padding-block: 15px;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: rgba(188, 188, 188, 0.5);
+}
+
+.promo-text {
+  text-align: center;
+}
+
+/*---------------------------------
+絞り込み
+----------------------------------*/
+.Shiborikomi {
+  background-color: #f0f8fb;
+  padding-block: 50px;
+}
+.Shiborikomi ul {
+  overflow-wrap: break-word;
+}
+.Shiborikomi ul li {
+  padding: 5px 15px;
+  display: inline-block;
+  list-style: none;
+}
+
+.Shiborikomi1 {
+  border-left: 2px solid;
+  margin-bottom: 32px;
+}
+.Shiborikomi1 p {
+  padding-inline: 30px;
+  font-size: 40px;
+}
+
+.Shiborikomi2 {
+  margin-inline: 30px;
+}
+.Shiborikomi2 .area,
+.Shiborikomi2 .amount {
+  margin-bottom: 20px;
+}
+.Shiborikomi2 li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kensaku {
+  display: block;
+  width: 150px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #168eff;
+  box-shadow: 2px 5px #aaa8a9;
+  border-radius: 2px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.kensaku:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+/*-------------------------------------------
+section お祭り
+------------------------------------------*/
+#Omatsuri-list {
+  margin-block: 100px;
+}
+#Omatsuri-list h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 100px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.Omatsuri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-block: 50px;
+}
+.Omatsuri img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.Omatsuri li {
+  list-style: none;
+}
+.Omatsuri a {
+  color: black;
+  text-decoration: none;
+}
+.Omatsuri .omatsuri-text {
+  margin-block: 5px;
+  text-align: center;
+}
+
+.pagelink {
+  text-align: center;
+  margin-block: 20px;
+}
+.pagelink a {
+  color: black;
+  text-decoration: none;
+  padding-inline: 5px;
+}
+
+/*============================
+とんだ先  matsuri-in
+=============================*/
+.matsuriin-main {
+  max-width: 100%;
+}
+.matsuriin-main img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 400px;
+  filter: blur(2px);
+}
+
+.main-text h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin-block: 100px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.matsuri-info {
+  display: flex;
+  margin-bottom: 100px;
+  margin-inline: auto;
+  max-width: 80%;
+}
+
+.matsuri-left {
+  width: 50%;
+  text-align: right;
+  margin-inline: 30px;
+}
+
+.matsuri-right {
+  width: 50%;
+  margin-inline: 30px;
+}
+.matsuri-right .data {
+  margin-block: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.matsuri-right .data dt {
+  width: 30%;
+}
+.matsuri-right .data dd {
+  width: 70%;
+}
+.matsuri-right a {
+  display: block;
+  color: black;
+  margin-block: 50px;
+}
+
+@media (max-width: 900px) {
+  /*-------------------------------------------
+  section お祭り
+  ------------------------------------------*/
+  .Omatsuri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Omatsuri img {
+    height: 300px;
+  }
+
+  /*============================
+  とんだ先  matsuri-in
+  =============================*/
+  .matsuri-info {
+    display: block;
+  }
+
+  .matsuri-left {
+    width: 100%;
+    text-align: right;
+    margin-inline: 0px;
+  }
+
+  .matsuri-right {
+    width: 100%;
+    margin: 10px 50px;
+  }
+}

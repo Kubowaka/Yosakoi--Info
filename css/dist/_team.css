@@ -1,0 +1,123 @@
+@charset "UTF-8";
+.obi {
+  margin-top: 60px;
+  background-image: url("../img/backimage.png");
+  /*効かない*/
+  width: 100%;
+  height: 80px;
+}
+.obi h3 {
+  padding: 20px 100px;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+/*-------------------------------
+スリック
+-------------------------------*/
+.team-slick {
+  height: 400px;
+  background-color: #f0f8fb;
+}
+.team-slick img {
+  padding: 5px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/*---------------------------------------------------
+main
+---------------------------------------------------*/
+/*----------------------
+絞り込みスライド
+----------------------*/
+.choose-team {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f8fb;
+  margin: 0 auto;
+  padding-inline: 50px;
+}
+.choose-team li {
+  list-style: none;
+  padding: 20px;
+}
+.choose-team a {
+  text-decoration: none;
+  color: black;
+}
+.choose-team a:hover {
+  color: #e84817;
+}
+
+/*---------------------------
+メインリスト
+-------------------------*/
+#Team-list {
+  margin-block: 100px;
+}
+
+.todofukenbetsu {
+  margin-block: 50px;
+}
+.todofukenbetsu h3 {
+  padding-block: 10px;
+}
+.todofukenbetsu .next-link {
+  text-align: right;
+}
+.todofukenbetsu .next-link a {
+  color: black;
+}
+
+.tp-team {
+  display: flex;
+  text-align: center;
+}
+.tp-team li {
+  margin: 5px;
+  list-style: none;
+  padding: 5px 10px;
+  width: 33.3%;
+}
+.tp-team a {
+  text-decoration: none;
+  color: black;
+}
+.tp-team img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  /*---------------------------
+  見出し
+  ---------------------------*/
+  .obi h3 {
+    font-size: 24px;
+    padding: 20px 10px;
+  }
+
+  /*---------------------------
+  絞り込み
+  -------------------------*/
+  .choose-team li {
+    padding: 10px 20px;
+  }
+
+  /*---------------------------
+  メインリスト
+  -------------------------*/
+  .tp-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tp-team li {
+    width: 100%;
+  }
+  .tp-team li:last-child {
+    display: none;
+  }
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.toiawase-obi {
+  margin-top: 60px;
+  background-image: url("../img/backimage.png");
+  /*効かない*/
+  width: 100%;
+  height: 80px;
+}
+.toiawase-obi h3 {
+  padding: 20px 100px;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.toiawase-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.toiawase-form {
+  background-color: #f0f8fb;
+  margin: 10px;
+  padding: 20px;
+}
+.toiawase-form dd {
+  background-color: white;
+  margin-block: 10px;
+  padding: 5px;
+}
+.toiawase-form #kibou-check {
+  text-align: center;
+}
+.toiawase-form textarea {
+  width: 100%;
+}
+
+.submit-btn {
+  text-align: center;
+}
+.submit-btn .submit {
+  display: inline-block;
+  border: 1px solid #168eff;
+  background-color: #ffffff;
+  padding: 20px 100px;
+  margin-block: 20px;
+  box-shadow: 2px 5px #aaa8a9;
+}
+.submit-btn .submit:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+@media (max-width: 900px) {
+  .toiawase-obi h3 {
+    font-size: 24px;
+    padding: 20px 10px;
+  }
+
+  .toiawase-wrapper {
+    width: 90%;
+  }
+}

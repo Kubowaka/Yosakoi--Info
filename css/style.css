@@ -1,0 +1,975 @@
+@charset "UTF-8";
+.matsuri-mainvisual {
+  position: relative;
+}
+.matsuri-mainvisual img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.matsuri-mainvisual .matsuri-logo {
+  z-index: 1000;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  color: white;
+}
+
+.matsuri-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  font-size: 150px;
+  color: white;
+}
+
+.monthly-promo {
+  padding-block: 15px;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: rgba(188, 188, 188, 0.5);
+}
+
+.promo-text {
+  text-align: center;
+}
+
+/*---------------------------------
+絞り込み
+----------------------------------*/
+.Shiborikomi {
+  background-color: #f0f8fb;
+  padding-block: 50px;
+}
+.Shiborikomi ul {
+  overflow-wrap: break-word;
+}
+.Shiborikomi ul li {
+  padding: 5px 15px;
+  display: inline-block;
+  list-style: none;
+}
+
+.Shiborikomi1 {
+  border-left: 2px solid;
+  margin-bottom: 32px;
+}
+.Shiborikomi1 p {
+  padding-inline: 30px;
+  font-size: 40px;
+}
+
+.Shiborikomi2 {
+  margin-inline: 30px;
+}
+.Shiborikomi2 .area,
+.Shiborikomi2 .amount {
+  margin-bottom: 20px;
+}
+.Shiborikomi2 li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kensaku {
+  display: block;
+  width: 150px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #168eff;
+  box-shadow: 2px 5px #aaa8a9;
+  border-radius: 2px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.kensaku:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+/*-------------------------------------------
+section お祭り
+------------------------------------------*/
+#Omatsuri-list {
+  margin-block: 100px;
+}
+#Omatsuri-list h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 100px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.Omatsuri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-block: 50px;
+}
+.Omatsuri img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.Omatsuri li {
+  list-style: none;
+}
+.Omatsuri a {
+  color: black;
+  text-decoration: none;
+}
+.Omatsuri .omatsuri-text {
+  margin-block: 5px;
+  text-align: center;
+}
+
+.pagelink {
+  text-align: center;
+  margin-block: 20px;
+}
+.pagelink a {
+  color: black;
+  text-decoration: none;
+  padding-inline: 5px;
+}
+
+/*============================
+とんだ先  matsuri-in
+=============================*/
+.matsuriin-main {
+  max-width: 100%;
+}
+.matsuriin-main img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 400px;
+  filter: blur(2px);
+}
+
+.main-text h3 {
+  text-align: center;
+  text-decoration: underline;
+  margin-block: 100px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.matsuri-info {
+  display: flex;
+  margin-bottom: 100px;
+  margin-inline: auto;
+  max-width: 80%;
+}
+
+.matsuri-left {
+  width: 50%;
+  text-align: right;
+  margin-inline: 30px;
+}
+
+.matsuri-right {
+  width: 50%;
+  margin-inline: 30px;
+}
+.matsuri-right .data {
+  margin-block: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.matsuri-right .data dt {
+  width: 30%;
+}
+.matsuri-right .data dd {
+  width: 70%;
+}
+.matsuri-right a {
+  display: block;
+  color: black;
+  margin-block: 50px;
+}
+
+@media (max-width: 900px) {
+  /*-------------------------------------------
+  section お祭り
+  ------------------------------------------*/
+  .Omatsuri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Omatsuri img {
+    height: 300px;
+  }
+  /*============================
+  とんだ先  matsuri-in
+  =============================*/
+  .matsuri-info {
+    display: block;
+  }
+  .matsuri-left {
+    width: 100%;
+    text-align: right;
+    margin-inline: 0px;
+  }
+  .matsuri-right {
+    width: 100%;
+    margin: 10px 50px;
+  }
+}
+.obi {
+  margin-top: 60px;
+  background-image: url("../img/backimage.png"); /*効かない*/
+  width: 100%;
+  height: 80px;
+}
+.obi h3 {
+  padding: 20px 100px;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+/*-------------------------------
+スリック
+-------------------------------*/
+.team-slick {
+  height: 400px;
+  background-color: #f0f8fb;
+}
+.team-slick img {
+  padding: 5px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/*---------------------------------------------------
+main
+---------------------------------------------------*/
+/*----------------------
+絞り込みスライド
+----------------------*/
+.choose-team {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f8fb;
+  margin: 0 auto;
+  padding-inline: 50px;
+}
+.choose-team li {
+  list-style: none;
+  padding: 20px;
+}
+.choose-team a {
+  text-decoration: none;
+  color: black;
+}
+.choose-team a:hover {
+  color: rgb(232, 72, 23);
+}
+
+/*---------------------------
+メインリスト
+-------------------------*/
+#Team-list {
+  margin-block: 100px;
+}
+
+.todofukenbetsu {
+  margin-block: 50px;
+}
+.todofukenbetsu h3 {
+  padding-block: 10px;
+}
+.todofukenbetsu .next-link {
+  text-align: right;
+}
+.todofukenbetsu .next-link a {
+  color: black;
+}
+
+.tp-team {
+  display: flex;
+  text-align: center;
+}
+.tp-team li {
+  margin: 5px;
+  list-style: none;
+  padding: 5px 10px;
+  width: 33.3%;
+}
+.tp-team a {
+  text-decoration: none;
+  color: black;
+}
+.tp-team img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  /*---------------------------
+  見出し
+  ---------------------------*/
+  .obi h3 {
+    font-size: 24px;
+    padding: 20px 10px;
+  }
+  /*---------------------------
+  絞り込み
+  -------------------------*/
+  .choose-team li {
+    padding: 10px 20px;
+  }
+  /*---------------------------
+  メインリスト
+  -------------------------*/
+  .tp-team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tp-team li {
+    width: 100%;
+  }
+  .tp-team li:last-child {
+    display: none;
+  }
+}
+.toiawase-obi {
+  margin-top: 60px;
+  background-image: url("../img/backimage.png"); /*効かない*/
+  width: 100%;
+  height: 80px;
+}
+.toiawase-obi h3 {
+  padding: 20px 100px;
+  font-weight: normal;
+  font-size: 32px;
+}
+
+.toiawase-wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.toiawase-form {
+  background-color: #f0f8fb;
+  margin: 10px;
+  padding: 20px;
+}
+.toiawase-form dd {
+  background-color: white;
+  margin-block: 10px;
+  padding: 5px;
+}
+.toiawase-form #kibou-check {
+  text-align: center;
+}
+.toiawase-form textarea {
+  width: 100%;
+}
+
+.submit-btn {
+  text-align: center;
+}
+.submit-btn .submit {
+  display: inline-block;
+  border: 1px solid #168eff;
+  background-color: #ffffff;
+  padding: 20px 100px;
+  margin-block: 20px;
+  box-shadow: 2px 5px #aaa8a9;
+}
+.submit-btn .submit:active {
+  box-shadow: none;
+  transform: translateY(1px);
+}
+
+@media (max-width: 900px) {
+  .toiawase-obi h3 {
+    font-size: 24px;
+    padding: 20px 10px;
+  }
+  .toiawase-wrapper {
+    width: 90%;
+  }
+}
+/* @use "page/_matsuri.scss"; FILEにはいってるとき*/
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/*------------------------------------
+Header
+------------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 50;
+  background-color: white;
+}
+
+.header-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 15px;
+}
+
+.headleft a {
+  text-decoration: none;
+  color: black;
+}
+.headleft img {
+  display: block;
+  width: 150px;
+}
+
+.headright .nav {
+  display: flex;
+}
+.headright .nav li {
+  list-style: none;
+  padding: 0 10px;
+}
+.headright .nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/*ハンバーガーメニュー*/
+.toggle_btn {
+  display: none;
+}
+
+/*------------------------------------------
+main
+------------------------------------------*/
+#mainvisual {
+  margin-top: 60px;
+  width: 100%;
+  height: 300vh;
+  position: relative;
+}
+
+.mainvisual-textbox {
+  /*cssで半円を作ったもの*/
+  margin-inline: auto;
+  /*横幅が飛び出ないように訂正したもの*/
+  max-width: 1200px;
+  width: 80vw;
+  border-top-left-radius: 40vw;
+  border-top-right-radius: 40vw;
+  /*横幅とびでちゃう*/
+  background: #ffffff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  /*最初につくっていたもの*/
+}
+.mainvisual-textbox .mainvisual-text {
+  margin: 100px auto;
+}
+.mainvisual-textbox p {
+  letter-spacing: 0.5px;
+  margin-block: 2px;
+}
+.mainvisual-textbox .h2main {
+  margin-block: 40px 80px;
+  font-weight: normal;
+  font-size: 32px;
+}
+.mainvisual-textbox .h2sub {
+  margin-block: 80px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.fade li {
+  height: 300vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+.fade li img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+#mainvisual .fade li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+#mainvisual .fade li:nth-child(2) {
+  animation-delay: 5s;
+}
+
+#mainvisual .fade li:nth-child(3) {
+  animation-delay: 10s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*---------------------
+section-aboutteam
+---------------------*/
+#abou-team {
+  margin-block: 50px;
+}
+
+.team {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+  gap: 24px;
+}
+.team .t-text {
+  width: 80%;
+  /* width: 60%; */
+  /*  padding-top: 150px; */
+}
+.team .t-text {
+  width: calc(100% - 300px - 24px);
+}
+.team .t-text p {
+  margin-top: 8px;
+}
+.team .t-img {
+  width: 300px;
+  height: 300px;
+}
+.team .t-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*----------------------------------------------
+fes-slick
+----------------------------------------------*/
+.fes-list {
+  max-width: 100%;
+  height: 100%;
+  background-image: url(../img/backimage.png);
+}
+.fes-list li {
+  padding: 10px 5px;
+}
+.fes-list img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.team:first-child {
+  margin-bottom: 24px;
+}
+
+.team:last-child {
+  margin-top: 24px;
+}
+
+/*------------------------------------------
+Choose
+------------------------------------------*/
+#choose {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+.c-tex {
+  display: flex;
+}
+
+.tex1 {
+  display: block;
+  width: 900px;
+  height: 900px;
+  color: black;
+  background-color: rgba(104, 10, 255, 0.8);
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  top: -300px;
+  left: -30px;
+}
+
+.tex-intext1 {
+  margin: 360px auto;
+}
+.tex-intext1 h3 {
+  margin-block: 40px 80px;
+  font-weight: normal;
+  font-size: 32px;
+}
+.tex-intext1 p {
+  letter-spacing: 0.5px;
+  margin-block: 2px;
+}
+.tex-intext1 a {
+  color: black;
+  text-shadow: 1px 2px rgb(114, 114, 114);
+}
+.tex-intext1 a:hover {
+  color: rgb(244, 244, 244);
+}
+
+.tex2 {
+  display: block;
+  width: 900px;
+  height: 900px;
+  color: black;
+  background-color: rgba(249, 9, 9, 0.8);
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  bottom: -300px;
+  right: -30px;
+}
+
+.tex-intext2 {
+  margin: 250px auto;
+}
+.tex-intext2 h3 {
+  margin-block: 40px 80px;
+  font-weight: normal;
+  font-size: 32px;
+}
+.tex-intext2 p {
+  letter-spacing: 0.5px;
+  margin-block: 2px;
+}
+.tex-intext2 a {
+  color: black;
+  text-shadow: 1px 2px rgb(114, 114, 114);
+}
+.tex-intext2 a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/*==================================
+fotter
+=================================*/
+footer {
+  background-image: url("../img/backimage.png");
+  max-width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 50px;
+}
+
+.sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sns li {
+  list-style: none;
+  padding-inline: 10px;
+}
+.sns .iconsize {
+  font-size: 80px;
+  color: rgb(248, 248, 248);
+}
+
+.footer-nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.footer-nav li {
+  padding: 20px 5px;
+}
+.footer-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.inquiry {
+  padding-inline: 20px;
+}
+.inquiry a {
+  color: black;
+  text-decoration: none;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iphone&ipad用
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (max-width: 900px) {
+  /*----------------ハンバーガー----------------*/
+  .headright {
+    display: none;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 20;
+  }
+  .open .headright {
+    z-index: 200;
+    display: block;
+    background-image: url(../img/backimage.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 50px;
+    left: 0;
+    position: fixed;
+    cursor: pointer;
+  }
+  .open .headright .nav {
+    display: block;
+    text-align: center;
+    margin-block: 20px;
+    font-size: 20px;
+    transition: 2s;
+  }
+  .open .headright .nav li {
+    padding-block: 8px;
+  }
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    width: 50px; /*正方形作る(親)*/
+    height: 50px;
+    z-index: 150;
+    cursor: pointer;
+  }
+  .toggle_btn span {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgb(13, 13, 13);
+  }
+  .toggle_btn span:nth-child(1) {
+    top: 33%;
+  }
+  .toggle_btn span:nth-child(2) {
+    top: 50%;
+  }
+  .toggle_btn span:nth-child(3) {
+    top: 70%;
+  }
+  .open .toggle_btn span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+  }
+  .open .toggle_btn span:nth-child(2) {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  .open .toggle_btn span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+  }
+  /*----------------mainvisual----------------*/
+  #mainvisual {
+    max-width: 100%;
+    height: 150vh;
+  }
+  .mainvisual-textbox .mainvisual-text {
+    margin: 50px 40px;
+  }
+  .mainvisual-textbox p {
+    letter-spacing: 0px;
+    margin-block: 0px;
+  }
+  .mainvisual-textbox .h2main {
+    margin-block: 5px;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .mainvisual-textbox .h2sub {
+    margin-block: 5px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .fade li {
+    height: 150vh;
+    max-width: 100%;
+  }
+  .fade li img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  /*----------------section-aboutteam----------------*/
+  .team {
+    display: block;
+    align-items: flex-end;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0px;
+  }
+  .team .t-text {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .team .t-img {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .team .t-img img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .team:first-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .team:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /*----------------choose----------------*/
+  #choose {
+    height: 700px;
+  }
+  .c-tex {
+    display: flex;
+  }
+  .tex1 {
+    width: 500px;
+    height: 500px;
+    top: -30px;
+    left: -20px;
+  }
+  .tex-intext1 {
+    margin: 100px auto;
+  }
+  .tex-intext1 h3 {
+    margin-block: 30px;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .tex-intext1 p {
+    margin-inline: 60px;
+  }
+  .tex2 {
+    width: 500px;
+    height: 500px;
+    bottom: -30px;
+    right: -20px;
+  }
+  .tex-intext2 {
+    margin: 80px auto;
+  }
+  .tex-intext2 h3 {
+    margin-block: 30px;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .tex-intext2 p {
+    margin-inline: 60px;
+  }
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iphone用
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (max-width: 400px) {
+  /*----------------choose----------------*/
+  .tex1 {
+    display: block;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+  }
+  .tex-intext1 {
+    margin: 50px auto;
+  }
+  .tex-intext1 h3 {
+    margin-block: 30px 20px;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .tex-intext1 p {
+    letter-spacing: 0.5px;
+    margin-block: 2px;
+    padding-inline: 20px;
+  }
+  .tex2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+  }
+  .tex-intext2 {
+    margin: 50px auto;
+  }
+  .tex-intext2 h3 {
+    margin-block: 30px 20px;
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .tex-intext2 p {
+    letter-spacing: 0.5px;
+    margin-block: 2px;
+    padding-inline: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
